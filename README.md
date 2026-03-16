@@ -193,11 +193,11 @@ Covers:
 <table>
   <tr>
     <td align="center">
-      <img src="screenshots/home_light.png" width="250"/>
+      <img src="screenshots/suggestions.png" width="250"/>
       <br/><b>Home — Light</b>
     </td>
     <td align="center">
-      <img src="screenshots/home_dark.png" width="250"/>
+      <img src="screenshots/suggestions_dark.png" width="250"/>
       <br/><b>Home — Dark</b>
     </td>
     <td align="center">
@@ -207,22 +207,22 @@ Covers:
   </tr>
   <tr>
     <td align="center">
-      <img src="screenshots/chat_sending.png" width="250"/>
-      <br/><b>Chat — Sending</b>
+      <img src="screenshots/chat_dark.png" width="250"/>
+      <br/><b>Chat — Dark</b>
     </td>
     <td align="center">
       <img src="screenshots/history.png" width="250"/>
       <br/><b>History</b>
     </td>
     <td align="center">
-      <img src="screenshots/loading.png" width="250"/>
-      <br/><b>Loading State</b>
+      <img src="screenshots/history_dark.png" width="250"/>
+      <br/><b>History — Dark</b>
     </td>
   </tr>
 </table>
 
 ---
 
-## �📄 License
+## �� License
 
 MIT
