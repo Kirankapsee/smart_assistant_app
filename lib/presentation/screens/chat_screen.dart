@@ -108,7 +108,7 @@ class _ChatScreenState extends State<ChatScreen> {
         final isSending = state is ChatSending;
 
         if (messages.isEmpty && !isSending) {
-          return EmptyState(
+          return const EmptyState(
             icon: Icons.chat_bubble_outline_rounded,
             title: 'Start a conversation',
             subtitle: 'Ask me anything or pick a suggestion from the home screen',
@@ -145,12 +145,12 @@ class _ChatScreenState extends State<ChatScreen> {
         border: Border(
           top: BorderSide(
               color: isDark
-                  ? Colors.white.withOpacity(0.08)
+                  ? Colors.white.withValues(alpha: 0.08)
                   : AppTheme.divider),
         ),
         boxShadow: [
           BoxShadow(
-              color: Colors.black.withOpacity(0.04),
+              color: Colors.black.withValues(alpha: 0.04),
               blurRadius: 12,
               offset: const Offset(0, -2))
         ],
@@ -194,7 +194,7 @@ class _ChatScreenState extends State<ChatScreen> {
             const SizedBox(width: 8),
             Material(
               color: isSending
-                  ? AppTheme.primary.withOpacity(0.5)
+                  ? AppTheme.primary.withValues(alpha: 0.5)
                   : AppTheme.primary,
               borderRadius: BorderRadius.circular(16),
               child: InkWell(

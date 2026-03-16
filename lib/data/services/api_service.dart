@@ -7,8 +7,7 @@ import '../../core/constants/app_constants.dart';
 import '../models/chat_message_model.dart';
 import '../models/suggestion_model.dart';
 
-// Platform-specific imports
-import 'dart:io' if (dart.library.html) 'dart:html' as io_or_html;
+
 
 // ── Custom exceptions ─────────────────────────────────────
 class ApiException implements Exception {

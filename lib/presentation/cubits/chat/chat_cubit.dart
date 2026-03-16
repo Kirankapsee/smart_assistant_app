@@ -12,7 +12,7 @@ class ChatCubit extends Cubit<ChatState> {
 
   ChatCubit({ChatRepository? repository})
       : _repository = repository ?? ChatRepository(),
-        super(ChatIdle(messages: [])) {
+        super(const ChatIdle(messages: [])) {
     _loadHistory();
   }
 

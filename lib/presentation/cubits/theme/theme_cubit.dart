@@ -11,7 +11,7 @@ class ThemeCubit extends Cubit<ThemeState> {
 
   ThemeCubit({LocalStorageService? storage})
       : _storage = storage ?? LocalStorageService(),
-        super(ThemeState(isDark: false)) {
+        super(const ThemeState(isDark: false)) {
     _loadSaved();
   }
 

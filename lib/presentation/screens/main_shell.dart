@@ -34,7 +34,7 @@ class _MainShellState extends State<MainShell> {
           border: Border(
             top: BorderSide(
               color: isDark
-                  ? Colors.white.withOpacity(0.08)
+                  ? Colors.white.withValues(alpha: 0.08)
                   : AppTheme.divider,
             ),
           ),

@@ -150,8 +150,8 @@ class _HomeScreenState extends State<HomeScreen> {
     return BlocBuilder<SuggestionsCubit, SuggestionsState>(
       builder: (context, state) {
         if (state is SuggestionsLoading) {
-          return SliverPadding(
-            padding: const EdgeInsets.symmetric(horizontal: 16),
+          return const SliverPadding(
+            padding: EdgeInsets.symmetric(horizontal: 16),
             sliver: SliverToBoxAdapter(child: SuggestionSkeleton()),
           );
         }
@@ -177,8 +177,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 if (index == state.suggestions.length) {
                   if (state.isLoadingMore) return const LoadMoreIndicator();
                   if (!state.hasMore) {
-                    return Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 20),
+                    return const Padding(
+                      padding: EdgeInsets.symmetric(vertical: 20),
                       child: Center(
                         child: Text(
                           "You've seen it all! ✨",

@@ -201,7 +201,7 @@ class AppTheme {
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
-          side: BorderSide(color: Colors.white.withOpacity(0.08), width: 1),
+          side: BorderSide(color: Colors.white.withValues(alpha: 0.08), width: 1),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
@@ -209,11 +209,11 @@ class AppTheme {
         fillColor: darkCard,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: Colors.white.withOpacity(0.12)),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.12)),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
-          borderSide: BorderSide(color: Colors.white.withOpacity(0.12)),
+          borderSide: BorderSide(color: Colors.white.withValues(alpha: 0.12)),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(16),
@@ -232,7 +232,7 @@ class AppTheme {
           textStyle: GoogleFonts.dmSans(fontSize: 15, fontWeight: FontWeight.w600),
         ),
       ),
-      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
         backgroundColor: darkSurface,
         selectedItemColor: primary,
         unselectedItemColor: darkTextSecondary,

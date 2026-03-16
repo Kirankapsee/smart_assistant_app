@@ -60,7 +60,7 @@ class ChatBubble extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.06),
+                        color: Colors.black.withValues(alpha: 0.06),
                         blurRadius: 8,
                         offset: const Offset(0, 2),
                       ),
@@ -69,7 +69,7 @@ class ChatBubble extends StatelessWidget {
                         ? null
                         : Border.all(
                             color: isDark
-                                ? Colors.white.withOpacity(0.08)
+                                ? Colors.white.withValues(alpha: 0.08)
                                 : AppTheme.divider,
                           ),
                   ),
@@ -121,7 +121,7 @@ class ChatBubble extends StatelessWidget {
       width: 32,
       height: 32,
       decoration: BoxDecoration(
-        color: AppTheme.primary.withOpacity(0.15),
+        color: AppTheme.primary.withValues(alpha: 0.15),
         borderRadius: BorderRadius.circular(10),
       ),
       child: const Icon(Icons.person_rounded,
@@ -204,7 +204,7 @@ class _TypingIndicatorState extends State<TypingIndicator>
               ),
               border: Border.all(
                 color: isDark
-                    ? Colors.white.withOpacity(0.08)
+                    ? Colors.white.withValues(alpha: 0.08)
                     : AppTheme.divider,
               ),
             ),
@@ -221,7 +221,7 @@ class _TypingIndicatorState extends State<TypingIndicator>
                     height: 7,
                     margin: EdgeInsets.only(right: i < 2 ? 5 : 0),
                     decoration: BoxDecoration(
-                      color: AppTheme.primary.withOpacity(0.6),
+                      color: AppTheme.primary.withValues(alpha: 0.6),
                       shape: BoxShape.circle,
                     ),
                   ),

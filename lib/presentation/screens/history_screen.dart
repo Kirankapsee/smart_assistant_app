@@ -113,16 +113,16 @@ class HistoryScreen extends StatelessWidget {
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
         color: isUser
-            ? AppTheme.primary.withOpacity(isDark ? 0.15 : 0.08)
+            ? AppTheme.primary.withValues(alpha: isDark ? 0.15 : 0.08)
             : isDark
                 ? AppTheme.darkCard
                 : Colors.white,
         borderRadius: BorderRadius.circular(14),
         border: Border.all(
           color: isUser
-              ? AppTheme.primary.withOpacity(0.3)
+              ? AppTheme.primary.withValues(alpha: 0.3)
               : isDark
-                  ? Colors.white.withOpacity(0.08)
+                  ? Colors.white.withValues(alpha: 0.08)
                   : AppTheme.divider,
         ),
       ),
@@ -135,7 +135,7 @@ class HistoryScreen extends StatelessWidget {
                 ? null
                 : const LinearGradient(
                     colors: [AppTheme.primary, AppTheme.accent]),
-            color: isUser ? AppTheme.primary.withOpacity(0.2) : null,
+            color: isUser ? AppTheme.primary.withValues(alpha: 0.2) : null,
             borderRadius: BorderRadius.circular(10),
           ),
           child: Icon(

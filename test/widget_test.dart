@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:smart_assistant_app/core/theme/app_theme.dart';
@@ -17,17 +17,6 @@ Widget _wrap(Widget child) => MaterialApp(
       home: Scaffold(body: child),
     );
 
-Widget _wrapWithBlocs(Widget child) => MultiBlocProvider(
-      providers: [
-        BlocProvider(create: (_) => ThemeCubit()),
-        BlocProvider(create: (_) => SuggestionsCubit()),
-        BlocProvider(create: (_) => ChatCubit()),
-      ],
-      child: MaterialApp(
-        theme: AppTheme.light,
-        home: Scaffold(body: child),
-      ),
-    );
 
 // ── Model tests ───────────────────────────────────────────
 void main() {
@@ -255,7 +244,7 @@ void main() {
   group('SuggestionCard widget', () {
     testWidgets('renders title and description', (tester) async {
       const s = Suggestion(id: 1, title: 'Test Title', description: 'Desc');
-      await tester.pumpWidget(_wrap(SuggestionCard(suggestion: s)));
+      await tester.pumpWidget(_wrap(const SuggestionCard(suggestion: s)));
       expect(find.text('Test Title'), findsOneWidget);
       expect(find.text('Desc'), findsOneWidget);
     });
