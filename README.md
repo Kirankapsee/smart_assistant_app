@@ -188,6 +188,41 @@ Covers:
 
 ---
 
-## 📄 License
+## � Screenshots
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="screenshots/home_light.png" width="250"/>
+      <br/><b>Home — Light</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/home_dark.png" width="250"/>
+      <br/><b>Home — Dark</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/chat.png" width="250"/>
+      <br/><b>Chat</b>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <img src="screenshots/chat_sending.png" width="250"/>
+      <br/><b>Chat — Sending</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/history.png" width="250"/>
+      <br/><b>History</b>
+    </td>
+    <td align="center">
+      <img src="screenshots/loading.png" width="250"/>
+      <br/><b>Loading State</b>
+    </td>
+  </tr>
+</table>
+
+---
+
+## �📄 License
 
 MIT
